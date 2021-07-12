@@ -4,7 +4,7 @@ echo ${arr1[@]}
 total=${#arr1[@]}
 for(( i=0; i<$total; i++ ))
 do
-	if [ -f `${arr1[$i]}/deploy.json` ]
+	if [ -f "${arr1[$i]}/deploy.json" ]
 	then
 		type=`jq -r .deployment_type ${arr1[$i]}/deploy.json`
 		if [ $type == react ]

@@ -1,0 +1,24 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+
+  pre_build:
+    commands:
+      - cd backend
+      - mkdir output
+      - npm install
+  build:
+    commands:
+      - cd backend
+      - npm build
+      - npm test
+
+reports:
+  jest_reports:
+    files:
+      - output
+    file-format: JUNITXML
+    base-directory: backend/output

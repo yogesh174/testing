@@ -7,6 +7,7 @@ phases:
 
   build:
     commands:
+      - chmod +x ./scripts/test.sh
       - ./scripts/test.sh
 
 reports:

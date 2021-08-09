@@ -1,3 +1,5 @@
+#!/bin/bash
+
 arr1=(*)
 echo ${arr1[@]}
 total=${#arr1[@]}

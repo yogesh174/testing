@@ -5,19 +5,13 @@ phases:
     runtime-versions:
       nodejs: 12
 
-  pre_build:
-    commands:
-      - cd backend
-      - npm install
   build:
     commands:
-      - echo `pwd`
-      - npm build
-      - npm test
+      - ./scripts/before_install.sh
 
 reports:
   jest_reports:
     files:
-      - junit.xml
+      - junit-*.xml
     file-format: JUNITXML
-    base-directory: backend/output
+    base-directory: output

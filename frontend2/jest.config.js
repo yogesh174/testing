@@ -5,7 +5,7 @@ module.exports = {
       "jest-junit",
       {
         outputDirectory: "../output",
-        outputName: "junit-backend.xml",
+        outputName: "junit-frontend2.xml",
       },
     ],
   ],

@@ -12,7 +12,7 @@ phases:
       - npm install
   build:
     commands:
-      - cd backend
+      - echo `pwd`
       - npm build
       - npm test
 

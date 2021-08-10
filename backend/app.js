@@ -19,7 +19,7 @@ app.use("/controlpanel", adminroutes);
 app.use("/", userroutes);
 
 app.use("/", (req, res) => {
-  res.json("HellooklnHH123");
+  res.json("HellooklnHH174");
 });
 
 module.exports = app;
